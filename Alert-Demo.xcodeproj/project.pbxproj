@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651659C52A38A34900018AEF /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651659C42A38A34900018AEF /* CustomAlertController.swift */; };
+		651659C82A38A97D00018AEF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 651659C72A38A97D00018AEF /* SnapKit */; };
 		65920B082A38572E009F358B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65920B072A38572E009F358B /* AppDelegate.swift */; };
 		65920B0A2A38572E009F358B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65920B092A38572E009F358B /* SceneDelegate.swift */; };
 		65920B0C2A38572E009F358B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65920B0B2A38572E009F358B /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		651659C42A38A34900018AEF /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
 		65920B042A38572E009F358B /* Alert-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alert-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65920B072A38572E009F358B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65920B092A38572E009F358B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651659C82A38A97D00018AEF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				65920B072A38572E009F358B /* AppDelegate.swift */,
 				65920B092A38572E009F358B /* SceneDelegate.swift */,
 				65920B0B2A38572E009F358B /* ViewController.swift */,
+				651659C42A38A34900018AEF /* CustomAlertController.swift */,
 				65920B0D2A38572E009F358B /* Main.storyboard */,
 				65920B102A385730009F358B /* Assets.xcassets */,
 				65920B122A385730009F358B /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "Alert-Demo";
+			packageProductDependencies = (
+				651659C72A38A97D00018AEF /* SnapKit */,
+			);
 			productName = "Alert-Demo";
 			productReference = 65920B042A38572E009F358B /* Alert-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 65920AFB2A38572E009F358B;
+			packageReferences = (
+				651659C62A38A97D00018AEF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 65920B052A38572E009F358B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65920B0C2A38572E009F358B /* ViewController.swift in Sources */,
+				651659C52A38A34900018AEF /* CustomAlertController.swift in Sources */,
 				65920B082A38572E009F358B /* AppDelegate.swift in Sources */,
 				65920B0A2A38572E009F358B /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		651659C62A38A97D00018AEF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		651659C72A38A97D00018AEF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 651659C62A38A97D00018AEF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65920AFC2A38572E009F358B /* Project object */;
 }
